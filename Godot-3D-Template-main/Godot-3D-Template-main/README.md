@@ -12,4 +12,5 @@ Which features you included
 
 ## Future Development
 
-## Created by
+## Created by 
+Daniel Gramling
