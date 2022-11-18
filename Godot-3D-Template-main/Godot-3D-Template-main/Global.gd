@@ -8,6 +8,7 @@ func _ready():
 
 func _unhandled_input(_event):
 	if Input.is_action_pressed("menu"):
+		get_tree().quit()
 		if menu == null:
 			menu = get_node_or_null("/root/Game/UI/Menu")
 		if menu != null:

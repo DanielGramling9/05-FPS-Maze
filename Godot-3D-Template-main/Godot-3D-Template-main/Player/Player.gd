@@ -5,8 +5,12 @@ var max_speed = 8
 var mouse_sensitivity = 0.002
 var mouse_range = 1.2
 
-var velocity=Vector3()
 
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$Pivot/Camera.current = true
+
+var velocity=Vector3()
 func get_input():
 	var input_dir = Vector3()
 	if Input.is_action_pressed("forward"):
